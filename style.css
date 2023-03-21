@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+/* Reset Classes */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #ffffff;
+    --secondary-text-color: rgba(255, 255, 255, 0.7);
+    --accent-color: #e50914;
+    --accent-color-dark: #c11119;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8rem;
+    color: var(--primary-text-color);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+li {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+
+/* Utility Class */
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    /* border: 6px solid black; */
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.centre-align{
+    text-align: center;
+}
+
+.partition-section{
+    height: 1.1vh;
+    background-color: rgb(33, 32, 32);
+}
+
+/* Header Section */
+
+header {
+    background:linear-gradient(rgb(0, 0, 0, 0.9), rgb(0 , 0, 0, 0.5), rgb(0, 0, 0, 0.9)), url(./assets/Header_bg.jpeg);
+    height: 83.7vh;
+    background-position: center;
+}
+
+/* subheader/nav section */
+.nav-section{
+    /* height: 250px; */
+    justify-content: space-between;
+    padding-top: 5px;
+}
+.ntflix-logo img{
+    width: 180px; 
+}
+
+select{
+    background-color: transparent;
+    margin-right: 25px;
+    padding: 4px 20px;
+    color: var(--primary-text-color);
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 4px;
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    padding: 4px 15px ;
+    font-weight: 700;
+    color: white;
+    box-shadow: 0px 0px 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+/* subheader/main content inside header section*/
+
+.header-main-content{
+   margin-top: 155px;
+}
+
+.header-h1{
+
+}
+.header-h3{
+    padding: 15px;
+
+}
+.header-p{
+    margin-top: 10px;
+}
+
+.input-section{
+    justify-content: center;
+    margin-top: 24px;
+    padding-bottom: 60px;
+}
+
+#email{
+    background-color: rgba(0, 0, 0, 0.498);;
+    margin-right: 5px;
+    width: 350px;
+    height: 3rem;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 4px;
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+#get-started{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+
+}
+/* Big feature section */
+    /* section 1 */
+.big-feature-container{
+    background-color: #000000;
+    height: 70vh;
+    
+}
+
+.big-feature-content{
+    flex-basis: 40%;
+}
+.big-feature-content h2{
+   font-size: 2.8rem;
+}
+.big-feature-content h4{
+    font-size: 1.35rem;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.big-feature-left-container{
+    position: relative;
+    width: 640px;
+    height: 480px;
+}
+
+.big-feature-img{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+
+.big-feature-video{
+    position: absolute;
+    /* top: -10px; */
+    bottom: 10px;
+    left: 84px;
+    width: 466px;
+    height: 480px;
+}
+
+   /* section 2 */
+.big-feature-container1{
+    background-color: #000000;
+    height: 70vh;
+}
+.big-feature-mobile{
+    position: relative;
+    width: 640px;
+    height: 480px;
+
+
+}
+
+.small-container{
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 50px;
+    left: 140px;
+    width: 350px;
+    height: 100px;
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 4px;
+    background-color: #000000;
+}
+
+.small-container img{
+    width: 20%;
+    padding: 5px 10px 2px;
+}
+
+.small-container p{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+  /* section 3 */
+
+  .big-feature-left-container-mac{
+    position: relative;
+    width: 600px;
+    height: 430px;
+
+
+  }
+
+  .big-feature-video-mac{
+    position: absolute;
+    top: 45px;
+    left: 115px;
+    width: 380px;
+    height: 230px;
+  }
+  .big-feature-img-mac{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  /* FAQ section */
+
+.faq-container{
+    background-color: #000000;
+}
+
+.faq-container h2{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 80px;
+}
+.faq-card{
+    /* height: 5rem; */
+    background-color: #282727;
+    justify-content: space-between;
+    border-radius: 4px;
+    transition: 0.3s ease-out;
+    margin-block: 14px;
+}
+
+.faq-card:hover{
+    background-color: #474444;
+}
+
+.faq-card-content{
+    font-size: 1.6rem;
+   padding-block: 1.6rem;
+}
+
+.plus-icon{
+    padding-right: 10px;
+    
+}
+
+.faq-p{
+    margin-top: 45px;
+}
+
+/* footer */
+footer{
+    background-color: #000000;
+}
+.footer-p{
+    color: var(--secondary-text-color);
+    padding-top: 60px;
+ 
+}
+
+.footer-body{
+   
+}
+
+.footer-body-li{
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    padding-block: 30px;
+}
+
+.footer-link{
+    color: var(--secondary-text-color);
+    text-decoration:underline ;
+}
+
+.footer-p1{
+    color: var(--secondary-text-color);
+    padding-top: 20px;
+    padding-bottom: 60px;
+    font-size: 1rem;
+}
